@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="Utf-8">
+            <meta name="viewport" content ="width=device-width,initial-scale=1.0">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+            <title>EC2 webpage</title>
+            <style>
+                @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                font-family: "poppins",sans-serif;
+        }
+        body{
+            position: relative;
+            width: 100%;
+            min-height: 100vh;
+            display: flex;
+            flex-direction:column;
+            justify-content: flex-start;
+            background:url(mobile-background.jpg) no-repeat;
+            background-size:cover;
+            background-position: center;
+        }
+        header {
+            position: relative;
+            top:0;
+            width: 100%;
+            padding: 30px 100px;
+            display:flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header .EC2-Service {
+            position: relative;
+            color: whitesmoke;
+            font-size: 30px;
+            text-decoration: none;
+            font-weight: 800;
+            letter-spacing: 1px;
+        }
+        header .navigation a {
+            color: black;
+            text-decoration: none;
+            font-weight: 900;
+            letter-spacing: 1px;
+            padding: 3px 15px;
+            border-radius: 10px;
+            transition: 0.5s;
+            transition-property: background;
+            font-size: 800;
+            background-color: blanchedalmond;
+        }
+        header .navigation a:hover {
+            background: lightslategrey;
+        }
+        section {
+            width: 1000px;
+            margin: 30px 60px;
+        }
+    section h1 {
+        color: lightcyan;
+        font-size: 35px;
+        font-weight: 700;
+        letter-spacing: 1px;
+        line-height: 60px;
+        margin-bottom: 30px;
+    }
+    section h1 span {
+        color: aqua;
+        font-weight: 500;
+        font-size: 5;
+    }
+    section h3 + p {
+            font-size: 16px;
+            font-weight: 600;
+            color: whitesmoke; 
+            margin-top: 0;
+            margin-bottom: 40px;
+        }
+        section h3 {
+            font-size: 20px; 
+            font-weight: 800;
+            color: black;
+        }
+        section a {
+            color:black;
+            background-color: lightslategrey;
+            text-transform: uppercase;
+            font-weight: 700;
+            letter-spacing: 2px;
+            padding: 10px 20px;
+            border-radius: 6px;
+        }
+        section a:hover {
+            background-color: blue;
+        }
+        footer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: auto;
+            flex-direction: column;
+        }
+        footer a {
+            position: relative;
+            color: white;
+            font-size: 30px;
+            margin-bottom: 20px;
+            text-align: center; 
+        }
+        footer a:not(:last-child) {
+            margin-right: 60px;
+        }
+        footer a:hover {
+            transform :scale(1.5);
+        }
+        @media only screen and (max-width: 768px) {
+            body {
+                background-image: url('mobile-background.jpg');
+            }
+        }
+        footer {
+        flex-direction: row; 
+        justify-content: center;
+    }
+    footer a {
+        margin-right: 60px; 
+        margin-bottom: 0; 
+    }
+    footer h5 {
+        display: inline-block; 
+    font-size: 14px;
+    font-weight: 800;
+     }
+    </style>
+</head>
+        <body>
+            <header>
+                <h2><a href="#"
+                    class="EC2-Service">EC2-Service</a></h2>
+                <div class="navigation">
+                    <a href="#">Home</a>
+                    <a href="#">Features</a>
+                    <a href="#">About</a>
+                    <a href="#">Pricing</a><br>
+                </div>
+            </header> 
+            <section>
+                <h1>Experience the seamless power of EC2,<br><span> where performance meets simplicity</span></h1>
+                    <h3>
+                    Scalable Computing Power:</h3>
+                     <p>EC2 allows users to rent virtual servers (known as instances) in the cloud. These instances can be easily scaled up or down based on demand, allowing users to quickly adjust their computing resources as needed.</p><br>
+
+                    <h3>Variety of Instance Types:</h3>
+                     <p>AWS offers a wide range of instance types optimized for different use cases, such as general-purpose computing, memory-intensive applications, compute-intensive workloads, and more. Users can choose the instance type that best fits their requirements in terms of CPU, memory, storage, and networking capabilities.</p><br>
+                    
+                    <h3>Flexible Pricing Options:</h3>
+                    <p> EC2 offers various pricing options, including on-demand instances, reserved instances, and spot instances. Users can choose the pricing model that best suits their budget and usage patterns.</p><br>
+                    
+                    <h3>Integration with Other AWS Services:</h3> 
+                    <p>EC2 integrates seamlessly with other AWS services, such as Amazon S3 for storage, Amazon RDS for databases, Amazon VPC for networking, and more. This allows users to build complex and scalable applications using a wide range of cloud services.</p><br>
+
+                </p>
+                <a href="#">More Info</a>
+            </section>
+            <footer>
+                <a href="#"><i class="fa-brands fa-aws"></i></a>
+                <a href="#"><i class="fa-brands fa-chrome"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                <h5>Future developers @2024</h5>
+            </footer>
+        </body>
+    </html>
